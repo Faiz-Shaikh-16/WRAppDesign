@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wm_background"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:text="Welcome to \nWaste Reformers\n App"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Login as a..."
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+
+    <Button
+        android:id="@+id/btnUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:backgroundTint="#00C853"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/btnWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Worker"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnUser"
+        app:layout_constraintStart_toStartOf="@+id/btnUser"
+        app:layout_constraintTop_toBottomOf="@+id/btnUser"
+        android:backgroundTint="#00C853"
+        android:textColor="#FFF"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Admin"
+        app:layout_constraintEnd_toEndOf="@+id/btnWorker"
+        app:layout_constraintStart_toStartOf="@+id/btnWorker"
+        app:layout_constraintTop_toBottomOf="@+id/btnWorker"
+        android:backgroundTint="#00C853"
+        android:textColor="#FFF"
+        android:textSize="25sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
